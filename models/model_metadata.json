@@ -1,0 +1,67 @@
+{
+  "source_file": "heart+disease/processed.cleveland.data",
+  "clean_data_file": "data/heart_disease_cleveland_selected.csv",
+  "model_file": "models/heart_disease_pipeline.joblib",
+  "selected_dataset_variant": "processed.cleveland.data",
+  "features": [
+    "age",
+    "cp",
+    "thalach",
+    "oldpeak"
+  ],
+  "target_source": "num",
+  "target_rule": "target = 0 when num == 0, otherwise target = 1 when num > 0",
+  "feature_ranges": {
+    "age": {
+      "min": 29.0,
+      "max": 77.0
+    },
+    "cp": {
+      "min": 1.0,
+      "max": 4.0
+    },
+    "thalach": {
+      "min": 71.0,
+      "max": 202.0
+    },
+    "oldpeak": {
+      "min": 0.0,
+      "max": 6.2
+    }
+  },
+  "cp_values": [
+    1.0,
+    2.0,
+    3.0,
+    4.0
+  ],
+  "rows": 303,
+  "missing_values": {
+    "age": 0,
+    "cp": 0,
+    "thalach": 0,
+    "oldpeak": 0,
+    "num": 0,
+    "target": 0
+  },
+  "class_distribution": {
+    "0": 164,
+    "1": 139
+  },
+  "metrics": {
+    "accuracy": 0.8524590163934426,
+    "precision": 0.9130434782608695,
+    "recall": 0.75,
+    "f1": 0.8235294117647058,
+    "confusion_matrix": [
+      [
+        31,
+        2
+      ],
+      [
+        7,
+        21
+      ]
+    ]
+  }
+}
