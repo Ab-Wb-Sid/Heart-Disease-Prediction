@@ -3,6 +3,7 @@
   "clean_data_file": "data/heart_disease_cleveland_selected.csv",
   "model_file": "models/heart_disease_pipeline.joblib",
   "selected_dataset_variant": "processed.cleveland.data",
+  "assumption": "The processed Cleveland file is used because the UCI documentation says it is the processed variant commonly used in ML experiments and it contains the 14 documented columns.",
   "features": [
     "age",
     "cp",
